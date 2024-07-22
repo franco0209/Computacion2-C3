@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="culmen length (mm) <= 48.3\nsamples = 267\nvalue = [136, 131]\nclass = male ", fillcolor="#fefaf8"] ;
+1 [label="culmen depth (mm) <= 18.05\nsamples = 191\nvalue = [69, 122]\nclass = female", fillcolor="#a9d4f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="body mass (g) <= 4975.0\nsamples = 121\nvalue = [22, 99]\nclass = female", fillcolor="#65b3eb"] ;
+1 -> 2 ;
+3 [label="samples = 98\nvalue = [5, 93]\nclass = female", fillcolor="#44a2e6"] ;
+2 -> 3 ;
+4 [label="samples = 23\nvalue = [17, 6]\nclass = male ", fillcolor="#eead7f"] ;
+2 -> 4 ;
+5 [label="body mass (g) <= 3537.5\nsamples = 70\nvalue = [47.0, 23.0]\nclass = male ", fillcolor="#f2bf9a"] ;
+1 -> 5 ;
+6 [label="samples = 18\nvalue = [3, 15]\nclass = female", fillcolor="#61b1ea"] ;
+5 -> 6 ;
+7 [label="samples = 52\nvalue = [44, 8]\nclass = male ", fillcolor="#ea985d"] ;
+5 -> 7 ;
+8 [label="body mass (g) <= 5175.0\nsamples = 76\nvalue = [67, 9]\nclass = male ", fillcolor="#e89254"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="culmen depth (mm) <= 18.0\nsamples = 40\nvalue = [31, 9]\nclass = male ", fillcolor="#eda672"] ;
+8 -> 9 ;
+10 [label="samples = 9\nvalue = [2, 7]\nclass = female", fillcolor="#72b9ec"] ;
+9 -> 10 ;
+11 [label="samples = 31\nvalue = [29, 2]\nclass = male ", fillcolor="#e78a47"] ;
+9 -> 11 ;
+12 [label="samples = 36\nvalue = [36, 0]\nclass = male ", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
